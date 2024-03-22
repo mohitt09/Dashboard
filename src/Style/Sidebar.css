@@ -1,0 +1,51 @@
+.sidebar {
+  background-color: #33415c;
+  color: #fff;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 10;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-content ul li {
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.sidebar-content ul li:hover {
+  background-color: #44536f; 
+}
+
+
+
+/* Media Query for Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  ul{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+  .sidebar-content ul li {
+    padding: 0.5rem 2rem;
+  }
+ 
+}
